@@ -213,3 +213,61 @@ h3 {
 .mental-benefits ul {
     list-style-type: none;
 }
+
+.workout-routines {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1rem 1rem;
+}
+
+.workout-routines ul {
+    list-style-type: none;
+}
+
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday,
+.saturday,
+.sunday {
+    padding: 50px 0;
+}
+
+.workout-routines p,
+.workout-routines li {
+    padding: 10px 0;
+}
+
+.workout-routines h2 {
+    text-align: center;
+    letter-spacing: normal;
+}
+
+video {
+    width: 200px;
+}
+
+.tuesday-videos,
+.wednesday-videos,
+.friday-videos,
+.saturday-videos,
+.sunday-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.workout-vid {
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    font-weight: bolder;
+    padding: 25px;
+}
