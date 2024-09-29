@@ -271,3 +271,43 @@ video {
     font-weight: bolder;
     padding: 25px;
 }
+.meal-preps {
+    padding: 1rem;
+}
+
+.meal-preps h2 {
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: solid;
+    text-decoration-line: underline;
+}
+
+table {
+    background: rgb(225, 209, 241);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption,
+td,
+th {
+    padding: 1rem;
+}
+
+caption {
+    background-color: rgb(110, 66, 151);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th {
+    background: rgb(225, 209, 241);
+    text-decoration: solid;
+    text-decoration-line: underline;
+}
+
+tr:nth-of-type(2n) {
+    background-color: rgb(204, 167, 239);
+}
