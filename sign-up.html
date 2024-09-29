@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Health Journey. Start your goals with us.">
+    <meta name="keywords" content="exercise, meal preps, gym wokouts, home workouts.">
+    <title>Your Health Journey</title> 
+    <link rel="icon" href="indexpics/weblogo.png"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Visit our home page">
+                <img src="indexpics/weblogo.png" alt="logo">
+            </a>
+            <a href="index.html" aria-label="Visit our home page">
+                <h1>Your Health Journey</h1>
+            </a>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" aria-label="Visit our home page">Home</a></li>
+                <li><a href="workout-routines.html" aria-label="Visit our workout routines page">Workout Routines</a></li>
+                <li><a href="meal-preps.html" aria-label="Visit our meal preps page">Meal Preps</a></li>
+                <li><a href="sign-up.html" class="active" aria-label="Visit our sign up page">Sign Up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="signup-page">
+
+            <form action="responsive.html" method="GET" class="signup-form">
+                <h2>Gym Membership Form</h2>
+                <h3>Awali Perjalanan Menuju Tubuh Sehat Impianmu Sekarang!  </h3>
+                <hr>
+                <br>
+                <p class="p-center"><strong>Note:</strong> Psstt, untuk menjadi member ini FREE lho! Bergabunglah dan Wujudkan Kebugaranmu Hari Ini! </p>
+                <br>
+                <br>
+                <div class="form-content">
+
+                    <div class="user-input-box">
+                        <label for="first-name">First Name: </label>
+                        <input type="text" name="first-name" placeholder="Masukkan Nama Depanmu" class="input" id="first-name" required>
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="last-name">Last Name: </label>
+                        <input type="text" name="last-name" placeholder="Masukkan Nama Belakangmu" class="input" id="last-name" required>
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" placeholder="Usia" min="18" max="99" id="age" class="input">
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="main-workout-goal">Main Workout Goal (Yang mana nih goals utamamu?) : </label>
+                        <select name="main-workout-goal" id="main-workout-goal" class="input">
+                            <option value="weight-loss">Weight Loss</option>
+                            <option value="muscle-gain">Muscle Gain</option>
+                            <option value="improved-enduarance">Improved Enduarance</option>
+                            <option value="increased-strength">Inceased Strength</option>
+                            <option value="better-flexibility">Better Flexibility</option>
+                            <option value="improved-mental-health">Improved Mental Health</option>
+                        </select>
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" name="phone-number" placeholder="0123456789" class="input" id="phone-number">
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="email-address">Email Address: </label>
+                        <input type="email" name="email-address" placeholder="Masukkan Email-mu" class="input" id="email-address" required>
+                    </div>
+
+                    <p>Gender</p>
+                    <br>
+
+                    <div class="gender-buttons">
+                        <div>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male" required checked>
+                        </div>
+
+                        <div>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="send-clear-buttons">
+                        <button type="submit">Send</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/d4243b7aeb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
