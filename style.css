@@ -335,56 +335,74 @@ tr:nth-of-type(2n) {
     margin-bottom: 20px;
 }
 
-.signup-form,
-form>h2,
-form>h3,
-.p-center {
+.signup-form h2, 
+.signup-form h3 {
     text-align: center;
-    text-decoration-line: none;
-    padding-bottom: 10px;
+    color: #faf6ff;
 }
 
-.form-content {
+.signup-form .form-content {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Jarak antar input box */
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.user-input-box:nth-child(2n) {
-    justify-content: end;
+.signup-form .input {
+    flex: 1 1 48%; /* Mengatur lebar input box menjadi 48% agar dua kolom */
+    display:flex;
+    flex-direction: column;
 }
 
-.user-input-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    padding-bottom: 15px;
-}
-
-.user-input-box label {
-    width: 95%;
-    font-size: 15px;
-}
-
-.input {
-    height: 40px;
-    width: 95%;
-    padding: 0 10px;
-    border-radius: 10px;
-    border: 1px solid #5d3fd3;
-    margin: 5px 0;
+.signup-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
     font-weight: bold;
+    color: #ffffff;
 }
 
-button {
-    margin: 5px 10px;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: #5d3fd3;
+.signup-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; 
+    box-sizing: border-box; /
 }
+
+.signup-form input:focus {
+    border-color: #4a148c;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #4a148c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.signup-form button:hover {
+    background-color: #c18be3; 
+}
+
+/* Untuk layout responsif */
+@media (max-width: 600px) {
+    
+
+    .signup-form button {
+        width: 100%;
+    }
+}
+
 
 .send-clear-buttons {
     display: flex;
@@ -397,9 +415,44 @@ button:hover {
     background-color: #fff;
 }
 
-.gender-buttons {
-    display: contents;
-    padding-top: 10px;
+.gender-options {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.signup-form input[type="radio"] {
+    appearance: none; 
+    width: 20px; 
+    height: 10px; 
+    border: 2px solid #ddd; 
+    border-radius: 50%; 
+    outline: none; 
+    position: relative; 
+    cursor: pointer; 
+    margin-right: 1px; 
+}
+
+.signup-form input[type="radio"]:checked {
+    border-color: #cecbd2; 
+}
+
+.signup-form input[type="radio"]:checked::before {
+    content: ""; 
+    position: absolute; 
+    top: 3px; 
+    left: 3px; 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+    background-color: #eae5f0; 
+    transition: background-color 0.3s ease; 
+}
+
+.signup-form .gender-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px; 
 }
 
 .responsive-content {
@@ -415,4 +468,7 @@ button:hover {
     object-fit: contain;
 }
 
+.custom-alert {
+    display: none;
+}
 
