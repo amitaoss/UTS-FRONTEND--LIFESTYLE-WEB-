@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100-900;1,100-900&display=swap');
+
+:root {
+    --color-primary: #00A9FF; /* Main blue */
+    --color-secondary: #89CFF3; /* Lighter blue */
+    --color-accent: #A0E9FF; /* Accent blue */
+    --color-background: #CDF5FD; /* Soft background color */
+}
 
 * {
     padding: 0;
@@ -12,10 +19,11 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-background);
 }
 
 header {
-    background-color: #5d3fd3;
+    background-color: var(--color-primary);
     color: #fff;
     display: flex;
     justify-content: space-evenly;
@@ -29,7 +37,7 @@ header {
 
 .active {
     background-color: #fff;
-    color: #5d3fd3;
+    color: var(--color-primary);
     border-bottom: 1px solid #000000;
     padding: 0 0.5em;
     font-weight: bold;
@@ -41,9 +49,7 @@ header {
     align-items: flex-start;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -75,7 +81,7 @@ header img {
 
 nav {
     position: absolute;
-    background-color: #5d3fd3;
+    background-color: var(--color-primary);
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -99,7 +105,7 @@ nav {
 
 main {
     flex: 1 0 auto;
-    margin-top: 124px;
+    margin-top: calc(100px + 1rem);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -109,7 +115,7 @@ main {
 
 .hero {
     background: url("indexpics/hero_image.webp") no-repeat center center/cover;
-    background-color: #5d3fd3;
+    background-color: var(--color-primary);
     background-position: 70%;
     height: 500px;
     width: 100%;
@@ -117,7 +123,7 @@ main {
 }
 
 .hero-text {
-    background-color: rgba(174, 0, 255, .10);
+    background-color: rgba(0, 169, 255, .10); /* Adjusted transparency */
     height: 500px;
     display: flex;
     justify-content: center;
@@ -138,8 +144,7 @@ main {
     margin-bottom: 20px;
 }
 
-.physical-benefits,
-.mental-benefits {
+.physical-benefits, .mental-benefits {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -149,16 +154,14 @@ main {
     margin: 0 10px;
 }
 
-.pb-img,
-.mb-img {
+.pb-img, .mb-img {
     width: 400px;
     background-color: rgb(247, 240, 254);
     display: flex;
     align-items: center;
 }
 
-.pb-img img,
-.mb-img img {
+.pb-img img, .mb-img img {
     width: 13em;
     padding: 1rem 0.25rem;
     display: block;
@@ -167,32 +170,20 @@ main {
     object-fit: contain;
 }
 
-.workout-pm-benefits,
-.healthy-meals-pm-benefits {
+.workout-pm-benefits, .healthy-meals-pm-benefits {
     display: flex;
     padding: 50px 0;
-    box-shadow: 0 15px 10px #5d3fd3;
+    box-shadow: 0 15px 10px var(--color-primary);
 }
 
-.workout-benefits h2,
-h3 {
+.workout-benefits h2, h3, .healthy-meals-benefits h2, h3 {
     text-decoration: solid;
     letter-spacing: normal;
     text-align: left;
     text-decoration-line: underline;
 }
 
-.healthy-meals-benefits h2,
-h3 {
-    text-decoration: solid;
-    letter-spacing: normal;
-    text-align: left;
-    text-decoration-line: underline;
-}
-
-.motivation>h2,
-.workout-benefits>h2,
-.healthy-meals-benefits>h2 {
+.motivation>h2, .workout-benefits>h2, .healthy-meals-benefits>h2 {
     text-align: center;
     text-decoration: underline;
     letter-spacing: normal;
@@ -206,11 +197,7 @@ h3 {
     margin-top: 25px;
 }
 
-.physical-benefits ul {
-    list-style-type: none;
-}
-
-.mental-benefits ul {
+.physical-benefits ul, .mental-benefits ul {
     list-style-type: none;
 }
 
@@ -229,18 +216,11 @@ h3 {
     list-style-type: none;
 }
 
-.monday,
-.tuesday,
-.wednesday,
-.thursday,
-.friday,
-.saturday,
-.sunday {
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday {
     padding: 50px 0;
 }
 
-.workout-routines p,
-.workout-routines li {
+.workout-routines p, .workout-routines li {
     padding: 10px 0;
 }
 
@@ -253,11 +233,7 @@ video {
     width: 200px;
 }
 
-.tuesday-videos,
-.wednesday-videos,
-.friday-videos,
-.saturday-videos,
-.sunday-videos {
+.tuesday-videos, .wednesday-videos, .friday-videos, .saturday-videos, .sunday-videos {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -271,6 +247,7 @@ video {
     font-weight: bolder;
     padding: 25px;
 }
+
 .meal-preps {
     padding: 1rem;
 }
@@ -283,19 +260,21 @@ video {
 }
 
 table {
-    background: rgb(225, 209, 241);
+    background: #A0E9FF;
     border-collapse: collapse;
     width: 100%;
 }
+td {
+    padding: 10px;
+    border: 1px solid #89CFF3;
+}
 
-caption,
-td,
-th {
+caption, td, th {
     padding: 1rem;
 }
 
 caption {
-    background-color: rgb(110, 66, 151);
+    background-color: var(--color-secondary);
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
@@ -303,13 +282,14 @@ caption {
 }
 
 th {
-    background: rgb(225, 209, 241);
+    background: #89CFF3; 
     text-decoration: solid;
     text-decoration-line: underline;
 }
 
+
 tr:nth-of-type(2n) {
-    background-color: rgb(204, 167, 239);
+    background-color: #00A9FF;
 }
 
 .signup-page {
@@ -326,17 +306,16 @@ tr:nth-of-type(2n) {
 }
 
 .signup-form {
-    background-color: rgba(110, 66, 151, 0.6);
+    background-color: rgba(0, 169, 255, 0.6); /* Var(--color-primary) with transparency */
     padding: 20px;
-    box-shadow: 0 15px 20px #fff;
+    box-shadow: 0 15px 20px var(--color-accent);
     display: block;
     max-width: 700px;
     border-radius: 50px;
     margin-bottom: 20px;
 }
 
-.signup-form h2, 
-.signup-form h3 {
+.signup-form h2, .signup-form h3 {
     text-align: center;
     color: #faf6ff;
 }
@@ -370,7 +349,7 @@ tr:nth-of-type(2n) {
     outline: none;
     transition: border-color 0.3s ease;
     width: 100%; 
-    box-sizing: border-box; /
+    box-sizing: border-box; 
 }
 
 .signup-form input:focus {
@@ -382,97 +361,19 @@ tr:nth-of-type(2n) {
     padding: 15px;
     font-size: 18px;
     color: white;
-    background-color: #4a148c;
+    background-color: var(--color-primary);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px;
 }
 
 .signup-form button:hover {
-    background-color: #c18be3; 
+    background-color: var(--color-accent);
 }
 
-/* Untuk layout responsif */
-@media (max-width: 600px) {
-    
-
-    .signup-form button {
-        width: 100%;
-    }
-}
-
-
-.send-clear-buttons {
-    display: flex;
-    justify-content: center;
-}
-
-button:hover {
-    border: 1px solid #5d3fd3;
-    color: #5d3fd3;
-    background-color: #fff;
-}
-
-.gender-options {
-    display: flex; 
-    align-items: center; 
-    margin-bottom: 10px; 
-}
-
-.signup-form input[type="radio"] {
-    appearance: none; 
-    width: 20px; 
-    height: 10px; 
-    border: 2px solid #ddd; 
-    border-radius: 50%; 
-    outline: none; 
-    position: relative; 
-    cursor: pointer; 
-    margin-right: 1px; 
-}
-
-.signup-form input[type="radio"]:checked {
-    border-color: #cecbd2; 
-}
-
-.signup-form input[type="radio"]:checked::before {
-    content: ""; 
-    position: absolute; 
-    top: 3px; 
-    left: 3px; 
-    width: 12px; 
-    height: 12px; 
-    border-radius: 50%; 
-    background-color: #eae5f0; 
-    transition: background-color 0.3s ease; 
-}
-
-.signup-form .gender-container {
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 10px; 
-}
-
-.responsive-content {
-    text-align: center;
-    font-style: italic;
-    padding: 0 10px;
-}
-
-.responsive-content img {
-    display: block;
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-}
-
-.custom-alert {
-    display: none;
-}
 footer {
-    background-color: #5d3fd3;
+    background-color: var(--color-primary);
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -481,75 +382,26 @@ footer {
 }
 
 footer p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
-.social-media {
-    margin: 1rem 0;
-}
-
-.social-media p {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.social-networks {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-networks li {
-    display: inline-block;
-}
-
-.social-networks li a {
-    color: #fff;
-    font-size: 1.5rem;
+footer a {
     text-decoration: none;
+    color: white;
 }
 
-.footer-links {
-    margin: 1rem 0;
+footer .social-links img {
+    width: 50px;
+    height: 50px;
+}
+.responsive-content {
+    text-align: center;
+    font-style: italic;
+    padding: 0 10px;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.responsive-content img {
+    width: 100%;
+    height: auto; /* Ubah tinggi otomatis agar menjaga rasio */
+    object-fit: contain;
 }
-
-.footer-links ul li {
-    display: inline;
-}
-
-.footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-links ul li a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
-    .social-networks {
-        flex-direction: column;
-    }
-
-    .footer-links ul {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
-
