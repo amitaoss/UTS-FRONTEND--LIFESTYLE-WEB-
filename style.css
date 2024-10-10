@@ -471,4 +471,85 @@ button:hover {
 .custom-alert {
     display: none;
 }
+footer {
+    background-color: #5d3fd3;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 -2px 20px #000000;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+.social-media p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.social-networks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-networks li {
+    display: inline-block;
+}
+
+.social-networks li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-links {
+    margin: 1rem 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links ul li {
+    display: inline;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .social-networks {
+        flex-direction: column;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
 
