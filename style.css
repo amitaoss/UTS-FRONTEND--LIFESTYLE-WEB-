@@ -422,7 +422,8 @@ footer .social-links img {
 }
 
 .responsive-content img {
+    display: block;
     width: 100%;
-    height: auto; /* Ubah tinggi otomatis agar menjaga rasio */
+    height: 200px;
     object-fit: contain;
 }
