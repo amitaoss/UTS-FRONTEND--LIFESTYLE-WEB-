@@ -427,3 +427,106 @@ footer .social-links img {
     height: 200px;
     object-fit: contain;
 }
+
+/* Untuk layar dengan lebar maksimum 992px */
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .physical-benefits, .mental-benefits {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .pb-img img, .mb-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 728px */
+@media only screen and (max-width: 728px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav {
+        position: relative;
+        padding: 0;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .physical-benefits, .mental-benefits {
+        width: 100%;
+    }
+
+    .workout-routines {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    video {
+        width: 150px;
+    }
+
+    .signup-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .pb-img img, .mb-img img {
+        height: 150px;
+    }
+
+    .signup-form .form-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signup-form .input {
+        flex: 1 1 100%;
+    }
+
+    .physical-benefits, .mental-benefits {
+        padding: 5px;
+    }
+
+    .workout-vid {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .responsive-content img {
+        height: 150px;
+    }
+}
