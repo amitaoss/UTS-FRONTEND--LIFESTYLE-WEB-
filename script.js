@@ -18,7 +18,6 @@ $(document).ready(function() {
         let age = $('#age').val();
         let phoneNumber = $('#phone-number').val();
         let emailAddress = $('#email-address').val();
-        let gender = $('#gender').val();
 
         // Menampilkan pesan alert jika ada kolom yang kosong
         if (!firstName) {
@@ -31,8 +30,6 @@ $(document).ready(function() {
             showAlert('You haven\'t filled the Phone Number column!');
         } else if (!emailAddress) {
             showAlert('You haven\'t filled the Email Address column!');
-        } else if (!gender) {
-            showAlert('You haven\'t choose your gender!');
         } else {
             alert("Thank you for signing up! We are excited to start your Fit Lifestyle journey.");
             this.submit(); 
